@@ -1,0 +1,21 @@
+package com.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class MathTest {
+
+	Math m;
+	@Before
+	public void setUp() throws Exception {
+		
+	}
+
+	@Test
+	public void whenNumIsZeroSystemShouldReturnOne() {
+		assertEquals(1, );
+	}
+
+}

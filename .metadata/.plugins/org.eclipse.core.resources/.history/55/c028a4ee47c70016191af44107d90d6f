@@ -1,0 +1,22 @@
+package com.capgemini.model;
+
+public class Account {
+
+	int account_number;
+	int amount;
+	public int getAccount_number() {
+		return account_number;
+	}
+	public void setAccount_number(int account_number) {
+		this.account_number = account_number;
+	}
+	public int getAmount() {
+		return amount;
+	}
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+	
+	
+	
+}

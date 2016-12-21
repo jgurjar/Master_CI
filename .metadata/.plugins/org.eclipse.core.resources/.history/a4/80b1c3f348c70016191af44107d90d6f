@@ -1,0 +1,48 @@
+package com.capgemini.service;
+
+import com.capgemini.exception.InsufficientBalanceException;
+import com.capgemini.exception.InsufficientInitialBalanceException;
+import com.capgemini.exception.InvalidAccountNumberException;
+import com.capgemini.model.Account;
+
+public class AccountServiceImpl implements AccountService{
+
+	public Account createAccount(int account_number, int amount) throws InsufficientInitialBalanceException {
+		
+		if(amount<500){
+			throw new InsufficientInitialBalanceException();
+		}
+		
+		Account account = new Account();
+		account.setAccount_number(101);
+		account.setAmount(5000);
+		
+		return account;
+		
+	}
+
+	@Override
+	public int showBalance(int account_number) throws InvalidAccountNumberException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int withdrawAmount(int account_number) throws InvalidAccountNumberException, InsufficientBalanceException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int depositAmount(int account_number) throws InvalidAccountNumberException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String fundTransfer(int account_number) throws InvalidAccountNumberException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

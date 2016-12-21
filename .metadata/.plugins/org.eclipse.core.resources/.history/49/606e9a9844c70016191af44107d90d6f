@@ -1,0 +1,11 @@
+package com.capgemini.service;
+
+import com.capgemini.model.Account;
+
+public class AccountServiceImpl {
+
+	public Account createAccount(int account_number, int amount){
+		
+	}
+	
+}

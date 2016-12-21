@@ -1,0 +1,8 @@
+package com.capgemini.repository;
+
+public interface AccountRepository {
+
+	boolean save(int account_number); 
+	//boolean 
+	
+}

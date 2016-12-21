@@ -1,0 +1,14 @@
+package com.capgemini.service;
+
+public interface AccountService {
+
+	public Account createAccount(int account_number, int amount) throws InsufficientInitialBalanceException ;
+	
+	// int showBalance
+	
+	// int withdrawAmount
+	
+	// int depositAmount
+	
+	// String fundTransfer 
+}
